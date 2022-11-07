@@ -67,7 +67,8 @@ ul, li{
 .leftpart{
   display: flex;
   flex-direction: column;
-  max-width: 460px;
+  max-width: 100%;
+  width: 460px;
   
 }
 .welcome {
@@ -144,7 +145,8 @@ figure{
 figcaption {
   font-style: italic;
   padding: 2px;
-  max-width: 200px;
+  width: 200px;
+  max-width: 100%;
   font-family: 'Myriad Pro Light';
   font-style: normal;
 }
@@ -159,6 +161,7 @@ figcaption {
   display: flex;
   justify-content: center;
   width: 820px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   flex-shrink: 0;
@@ -245,7 +248,10 @@ button:hover{
 }
 @media (max-width: 822px){
   .img-row{
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .msg , .quoteby{
   max-width: fit-content;
@@ -255,7 +261,9 @@ button:hover{
 }
 @media (max-width: 550px){
   body{
-    width: max-content;
+    position: absolute;
+    display: flex;
+    background-color: #3882f6;
   }
   .call-to-area{
     gap: 20px;
