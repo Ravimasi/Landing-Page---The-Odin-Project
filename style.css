@@ -262,8 +262,6 @@ button:hover{
 @media (max-width: 550px){
   body{
     position: absolute;
-    display: flex;
-    background-color: #3882f6;
   }
   .call-to-area{
     gap: 20px;
