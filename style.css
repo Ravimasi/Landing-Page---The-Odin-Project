@@ -262,6 +262,7 @@ button:hover{
 @media (max-width: 550px){
   body{
     position: absolute;
+    /*  */
   }
   .call-to-area{
     gap: 20px;
